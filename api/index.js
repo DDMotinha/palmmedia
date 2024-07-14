@@ -13,6 +13,10 @@ app.get('/zohoverify/verifyforzoho.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/verifyforzoho.html'));
 });
 
+app.get('/AraraSemFundo.png', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/AraraSemFundo.png'));
+});
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '/home.html'));
 });
