@@ -7,6 +7,7 @@ const app = express();
 const port = 50;
 
 app.use(bodyParser.json());
+app.use(express.static('public'))
 
 app.get('/zohoverify/verifyforzoho.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/verifyforzoho.html'));
