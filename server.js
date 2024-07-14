@@ -12,6 +12,6 @@ app.get('/zohoverify/verifyforzoho.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/verifyforzoho.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+app.listen(port, () => console.log("Server ready on port 50."));
+
+module.exports = app;
