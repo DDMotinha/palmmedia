@@ -12,6 +12,10 @@ app.get('/zohoverify/verifyforzoho.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/verifyforzoho.html'));
 });
 
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+
 app.listen(port, () => console.log("Server ready on port 50."));
 
 module.exports = app;
